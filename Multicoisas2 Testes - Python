@@ -1,0 +1,372 @@
+{
+	"info": {
+		"_postman_id": "fb6f3cff-dc67-483d-bd44-75d4c3eb6167",
+		"name": "Multicoisas2 Testes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateProdutos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 40,\r\n    \"nome\": \"mesa\",\r\n    \"descricao\": \"mesa para almooço\",\r\n    \"categoriaid\": 50,\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/produto"
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllProdutos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 12,\r\n    \"nome\": \"Cama\",\r\n    \"descricao\": \"Cama para dormir\",\r\n    \"categoriaid\": 7,\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/produto"
+			},
+			"response": []
+		},
+		{
+			"name": "GetOneProdutos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 12,\r\n    \"nome\": \"Cama\",\r\n    \"descricao\": \"Cama para dormir\",\r\n    \"categoriaid\": 7,\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/produto/1"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProdutos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 3,\r\n    \"nome\": \"lapis grafite\",\r\n    \"descricao\": \"lapis para apontar\",\r\n    \"categoriaid\": 10,\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/produto/3"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProdutos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 3,\r\n    \"nome\": \"lapis grafite\",\r\n    \"descricao\": \"lapis para apontar\",\r\n    \"categoriaid\": 10,\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/produto/3"
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllEstoque",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 3,\r\n    \"nome\": \"lapis grafite\",\r\n    \"descricao\": \"lapis para apontar\",\r\n    \"categoriaid\": 10,\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/estoque"
+			},
+			"response": []
+		},
+		{
+			"name": "GetOneEstoque",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 3,\r\n    \"nome\": \"lapis grafite\",\r\n    \"descricao\": \"lapis para apontar\",\r\n    \"categoriaid\": 10,\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/estoque/1"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateEstoque",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"produtoid\": 25,\r\n    \"quantidade\": 40,\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/estoque"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateEstoque",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"produtoid\": 25,\r\n    \"quantidade\": 90,\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/estoque/2"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateCategorias",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 25,\r\n    \"nome\": \"Mesa&Banho\",\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/categoria"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateCategorias",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 40,\r\n    \"nome\": \"Mesa&Banho\",\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/categoria/2"
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllClientes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 40,\r\n    \"nome\": \"Mesa&Banho\",\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/categoria/2"
+			},
+			"response": []
+		},
+		{
+			"name": "GetOneClientes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 40,\r\n    \"nome\": \"Mesa&Banho\",\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/cliente/2"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateClientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 24,\r\n    \"nome\": \"Harry Potter\",\r\n    \"datanascimento\": \"31-07-1980\",\r\n    \"email\": \"theboywholived@gmail.com\",\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/cliente"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateClientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 24,\r\n    \"nome\": \"Harry Potter\",\r\n    \"datanascimento\": \"31-07-1980\",\r\n    \"email\": \"theboywholived@gmail.com\",\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/cliente"
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllVenda",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 24,\r\n    \"nome\": \"Harry Potter\",\r\n    \"datanascimento\": \"31-07-1980\",\r\n    \"email\": \"theboywholived@gmail.com\",\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/venda"
+			},
+			"response": []
+		},
+		{
+			"name": "GetOneVenda",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 24,\r\n    \"nome\": \"Harry Potter\",\r\n    \"datanascimento\": \"31-07-1980\",\r\n    \"email\": \"theboywholived@gmail.com\",\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/venda/1"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateVenda",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 45,\r\n    \"valor\": \"R$100.50\",\r\n    \"datavenda\": \"28-02-2022\",\r\n    \"clienteid\": 10,\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/venda"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateVenda",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 50,\r\n    \"valor\": \"R$150.50\",\r\n    \"datavenda\": \"28-02-2022\",\r\n    \"clienteid\": 10,\r\n    \"datacriacao\": \"2022-02-27 10:10:10\",\r\n    \"datamodificacao\": \"2022-02-27 10:10:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/venda/2"
+			},
+			"response": []
+		}
+	]
+}
