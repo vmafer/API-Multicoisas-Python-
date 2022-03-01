@@ -9,6 +9,7 @@ API desenvoldida para funcionar como um sistema de gestão integrada utilizando 
  <div> 
   <h3> Tecnologias utilizadas </h3>
    <ul>
+     <li> Python</li> 
      <li> Git</li>
      <li>MySQL</li>
      <li>Postman</li>
