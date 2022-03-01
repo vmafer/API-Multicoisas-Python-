@@ -25,9 +25,8 @@ API desenvoldida para funcionar como um sistema de gestão integrada utilizando 
  
  <div>
  <h3>Métodos e Rotas</h3>
-  Por meio dos métodos HTTP, será manipulado os dados de acordo com a necessidade dos usuários.
-
-<ul> 
+ 
+ <ul> 
  <li>Para a entidade <b>Produtos</b>, os métodos e rotas serão: </li>
 
 | MÉTODO |     ROTA           |             AÇÃO              |
